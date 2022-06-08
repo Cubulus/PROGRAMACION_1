@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
+body {
+    font-family: 'Montserrat Alternates';
+    background-color: rgb(250, 233, 134);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgb(87, 86, 83),
+        4px 4px 4px rgb(168, 156, 120),
+        6px 6px 4px rgb(236, 226, 86);
+}
+
+.navbar {
+    background-color: rgb(236, 204, 22);
+    color: rgb(0, 0, 0);
+    border-color: black;
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    box-shadow: 2px 2px 4px rgb(139, 137, 137);
+    padding: 12px;
+    margin: 4px;
+    border-radius: 5px 5px 20px 20px;
+    transition: background-color, 0.8s border-radius, 0.8s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar:hover {
+    background-color: rgb(126, 111, 28);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 2px 4px rgb(139, 137, 137);
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+.navcentro {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.cervezas {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#sectionhome {
+    text-align: left;
+    font-size: 17px;
+    margin-top: 50px;
+    font-weight: bold;
+      
+}
+
+#sectionlocal {
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+#sectioncervezas {
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+}
+
+#rotacion1 {
+    transform: rotate(-10deg);
+    margin-left: 20px;
+}
+
+#rotacion2 {
+    transform: rotate(10deg);
+}
+
+#rotacion3 {
+    transform: rotate(8deg);
+}
+
+#rotacion4 {
+    transform: rotate(-4deg);
+}

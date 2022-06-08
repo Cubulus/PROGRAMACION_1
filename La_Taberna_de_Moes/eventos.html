@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <img src="images/moedepie.png" width="7%" align="left" />
+            <h1>La Taberna de Moe's</h1>
+        </header>
+        <nav>
+            <div class="navcentro">
+                <tr>
+                    <td><a class="navbar" href="index.html">Inicio</a></td>
+                    <td><a class="navbar" href="ellocal.html">El Local</a></td>
+                    <td><a class="navbar" href="eventos.html">Eventos</a></td>
+                    <td><a class="navbar" href="nuestrascervezas.html">Nuestras Cervezas</a></td>
+                </tr><br><br>
+                <h2 align="center">¿Quieres organizar un evento en nuestra taberna?</h2>
+                <h4 align="center">Rellena el siguiente formulario y MUY PRONTO el mismísimo Moe se pondrá en contacto
+                    contigo:</h4>
+                <form>
+                    <fieldset>
+                        <legend><b>DATOS DE LA RESERVA</b></legend>
+                        <label><b>Nombre</b></label><br>
+                        <input type="text" name="nombre" minlength="3" maxlength="20" /><br>
+                        <label><b>Apellidos</b></label><br>
+                        <input type="text" name="apellidos" minlength="3" /><br>
+                        <label><b>Tipo de Evento</b></label><br>
+                        <select name="tipoevento">
+                            <option>---------------------------</option>
+                            <option>Cumpleaños</option>
+                            <option>Despedida</option>
+                            <option>Kedada Friki</option>
+                            <option>Otras celebraciones</option>
+                        </select><br>
+                        <label><b>Fecha y Hora</b></label><br>
+                        <input type="datetime-local" name="fechaevento" /><br>
+                        <label><b>E-mail</b></label><br>
+                        <input type="email" name="email" /><br>
+                        <label><b>Observaciones</b></label><br>
+                        <textarea name="observaciones" cols="30" rows="10">Cuéntale a Moe los detalles...</textarea><br>
+                        <div>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </Fieldset>
+                </form><br>
+
+            </div>
+        </nav>
+        <hr size="5" width="100%">
+        <footer>
+            <a href="mailto:cubulus86@gmail.com"><img src="images/correo.png" width="3%" /></a>
+            <a href="https://api.whatsapp.com/send?phone=34615075939" target="_blank"><img src="images/whatsapp.png" width="3%" /></a>
+            <a href="http://instagram.com/cubulus86" target="_blank"><img src="images/instagram.png" width="3%" /></a>
+        </footer>
+
+    </div>
+</body>
+
+</html>
