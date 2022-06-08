@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrafos</title>
+</head>
+
+<body>
+    <h1 align="center">FORMATOS DE TEXTOS LOGICOS, FISICOS Y ESTRUCTURA DE LOS COLORES</h1>
+    <h2>Direccion</h2>
+    <address>
+        CFC Formacion <br>
+        C/ Virgen del Lluc, 38 <br>
+        28020
+    </address>
+    <h2>Citas</h2>
+    <blockquote>
+        "En tiempos de cambio, quienes estan abiertos al aprendizaje se adueñaran
+        del futuro, mientras aquellos que crean saberlo todo estarán bien equipados para
+        un mundo que ha dejado de existir"
+    </blockquote>
+    <!--
+        Etiquetas desde un estilo fisico
+        Son etiquetas que indican directamente al navegador como debe aparecer dicho texto.
+        Todas ellas son contenedoras.
+        <b> Negrita </b>
+        <i> Cursiva </i>
+        <s> Tachado </s>
+        <tt> Teletipo </tt>
+        <big> aumenta el tamaño </big>
+        <small> disminuye el tamaño </small>
+        <sub> subindices </sub>
+        <sup> superindice </sup>
+        <u> subrayado </u>
+    -->
+    <h2>Formato de Texto</h2>
+    <div>
+        <p>
+            <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Magni, distinctio!
+            Accusantium eius id laborum assumenda molestias distinctio reprehenderit explicabo adipisci.
+            Porro magni assumenda, <u>aperiam atque ratione sint eum provident ut.</u>
+            Eius ex ducimus magni qui a inventore distinctio possimus autem!
+            <big>Distinctio</big> nisi exercitationem nihil, perspiciatis qui maxime dolorum repudiandae atque?
+        </p>
+        <p>
+            <i>Formula del Amoniaco:</i>
+            NH<sub><small>3</small></sub><br>
+            <i>Logaritmo Neperiano de N:</i>
+            <big>e</big><sup><small>n</small></sup>
+        </p>
+    </div>
+    <!--
+        Etiquetas desde un estilo Lógico
+        solo describen el texto, dejando al navegador que los muestre de manera mas conveniente
+        a su configuracion.
+        <strong> Resalta texto, normalmente en negrita</strong>
+        <em> Principalmente en Cursiva </em>
+        <code> Estructura en codigo de ordenador </code>
+        <smap> Mostrar ejemplo </smap>
+        <var> Cursiva </var>
+        <cite> Revela como una cita, cursiva y sangrado </cite>
+        <dfn> Trasladar a algun tipo de cursiva </dfn>
+        <font> Cambia el formato de la letra
+            size:Tamaño(1 tamaño min. al 7 tamaño max.)
+            color:Color de letra
+            face:Tipo de letra
+        </font>
+    -->
+    <h2>Formato de Texto</h2>
+    <font size="7">Fuente mas grande</font><br>
+    <font size="4">Fuente mediana</font><br>
+    <font size="1">Fuente mas pequeña</font><br>
+    <font size="4" color="red">Texto en rojo</font><br>
+
+    <!--
+        ----------LOS COLORES----------
+        La perspectiva visual que ofrecen los monitores, espectro de la luz RedGreenBlue
+        se basarán en los colores lumínicos primarios. Conocido como síntesis aditiva.
+        El color parte de los espectro de luz no de tinta (CMYK, Azul, Magenta, Amarillo, Negro)
+    -->
+
+    <span style="color: rgb(255, 0, 0);"> Texto rojo</span><br>
+    <!--
+        https://html.colorcodes.com/es/
+        Un color hexadecimal seguirá el formato #RRVVAA (rojo, verde, azul)
+        Estos enteros hexadecimales pueden encontrarse en un rango de 00 a FF, especificando
+        sería la intensidad del color, donde 0 es una minima presencia del color y F será 15
+        veces esa minima presencia. Es decir, cuanto mas arriba en la escala esté la cantidad de
+        color rojo,verde o azul seleccionado, ese color añadido a la mezcla será mas brillante.
+    -->
+    <font color="#FF0000">texto rojo</font><br>
+    <font face="Verdana">Texto letra Verdana</font>
+    <!--
+        Diferencia entre el <div> y el <span>
+    -->
+    <div>
+        Provoca salto de línea, es considerado etiqueta block
+    </div>
+    <span>No provoca salto de linea y se asocia al elemento inmediatamente anterior</span>
+    <span> Repetimos, no provoca salto de linea</span>
+    
+    <h2 align="center">Colocacion Párrafos</h2>
+    <p align="center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, officiis?
+        Tenetur, tempore exercitationem veniam velit officiis et? Corrupti, et unde.
+        Porro ratione quibusdam praesentium. Nostrum omnis mollitia molestias deserunt recusandae.
+        Nulla atque sunt voluptates, ullam quis vero eos iusto deleniti.
+        Debitis voluptate dolor blanditiis laborum expedita porro animi architecto molestiae.
+        Odio, voluptates quibusdam expedita hic iure sequi sed eligendi modi!
+        Illo corporis officiis nemo pariatur aperiam perferendis quibusdam repudiandae itaque.
+        Tempore deserunt optio delectus corrupti est quidem recusandae, nesciunt voluptate?
+        Temporibus animi harum provident non dolorem unde dolores quae natus.
+        Autem ea perferendis soluta! Veritatis quisquam officia architecto doloribus iste!
+    </p>
+    <hr size="10" width="50%" align="center">
+    <p align="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Vero corporis ea asperiores dolorum nisi similique ipsam?
+        Ipsam, illo. Nisi earum doloribus quo est et.
+        Assumenda repellat hic eveniet repellendus consequatur. Quae, temporibus.
+        Magni ad unde at numquam facere? Facilis, qui?
+    </p>
+    <hr size="10" width="10%" align="center" color="black">
+    <p align="justify">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Atque assumenda aut quam, impedit tempore eligendi ullam.
+        Aliquam, assumenda repellendus quos cum iste voluptate animi?
+        Nihil, enim aperiam cum esse sit nemo ipsam.
+        Iste numquam obcaecati totam cumque cupiditate assumenda debitis.
+    </p>
+</body>
+
+</html>

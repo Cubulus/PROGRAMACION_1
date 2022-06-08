@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+
+<body>
+    <!--
+        -----------------CARACTERISTICAS VIDEO-------------------
+        ATRIBUTOS           VALOR                       DESCRIPCIÓN
+    1. src=""               URL/archivo.ext             Contenido a reproducir
+    2. poster=""            URL/archivo.ext(local)      Muestra imagen a modo presentación
+    3. preload=""           auto/metadata/none          Indica como realiza una precarga del video
+    4. metiagroup=""        nombre                      Hace referencia al nombre de un grupo de contenidos
+    5. autoplay=""          bolean(true|false)          Reproducción automática
+    6. loop=""              bolean(true|false)          Ciclo continuado de reproducción
+    7. muted=""             bolean(true|false)          Establece el video muteado
+    8. controls=""          bolean(true|false)          Muestra controles del entorno cliente
+    9. width=""             pilexs                      Ancho
+    10. height=""           pixels                      Alto
+
+    SINTAXIS:
+
+    <video>
+            <source/>
+    </video>
+    -->
+    <video width="20%" poster="images/toppng.com-icono-de-reproductor-de-musica-980x980.png" autoplay="true"
+        controls="controls" preload="none">
+        <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </video>
+    <!--
+        video recomendado
+    -->
+    <video width="20%" autoplay="true" loop="true" controls="controls" muted="true">
+        <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </video>
+    <!--
+        Youtube, Vimeo, Dailymotion... otros, utilizaremos la etiqueta <iframe>, como detalle reconoceremos
+            el atributo allowfullscreen, nos permite que los videos se puedan mostrar en pantalla completa.
+            Opción compartir/insertar y sale el código directamente para copiar.
+    -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NljLKZQTvJA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>"
+
+</body>
+
+</html>

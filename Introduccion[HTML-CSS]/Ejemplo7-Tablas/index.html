@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">TABLAS</h2>
+    <!--
+        Las Tablas:
+        Se utilizarán los mismos de filas, columnas, titulos como en cualquier
+        entorno. SINTAXIS:
+
+        Etiqueta                    Descripción
+        <table>                     Etiqueta contenedora de tabla
+        <th>                        Table header- Etiqueta contenedora de las cabeceras
+        <tr>                        Table row- Etiqueta contenedora de FILA
+        <td>                        Table date- Etiqueta contenedora de cada una de las celdas
+        <caption>                   Etiqueta contenedora para titulos de las tablas
+    -->
+    <h3>Ejemplo de tabla simple</h3>
+    <table border="1" bgcolor="grey">
+        <caption>Numeracion del 1 al 12</caption>
+        <tr>
+            <td>Uno</td>
+            <td>Dos</td>
+            <td>Tres</td>
+        </tr>
+        <tr>
+            <td>CUATRO</td>
+            <td>CINCO</td>
+            <td>SEIS</td>
+        </tr>
+        <tr>
+            <td>Siete</td>
+            <td>Ocho</td>
+            <td>Nueve</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <!--
+        COMBNINACION DE CELDAS
+
+        Atributos               Valor               Descripcion
+        colspan                 numero espacio      Numero columnas/espacios que la celda abarcará
+        rowspan                 numero espacio      Numero de filas/espacios que abarcará
+    -->
+    <h3 style="text-align: center;">Combinacion de celdas</h3>
+    <table border="2" style="text-align: center;" align="center">
+        <tr>
+            <td>Columna 1</td>
+            <td>Columna 2</td>
+            <td>Columna 3</td>
+            <td>Columna 4</td>
+        </tr>
+        <tr>
+            <td colspan="2">Dato 1</td>
+            <!--Unir columna-->
+            <!--<td>Dato 2</td>-->
+            <td>Dato 3</td>
+            <td rowspan="3">Dato 4</td>
+            <!--Unir filas-->
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+            <!--<td>Dato 4</td>-->
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">Dato 1</td>
+            <!--<td>Dato 2</td>-->
+            <td>Dato 3</td>
+            <!--<td>Dato 4</td>-->
+        </tr>
+        <tr>
+            <!--<td>Dato 1</td>
+            <td>Dato 2</td>-->
+            <td>Dato 3</td>
+            <td>Dato 4</td>
+        </tr>
+    </table>
+
+    <h3>Agrupaciones de columnas</h3>
+    <table>
+        <caption>EL PERIODICO DIGITAL</caption>
+        <tr>
+            <th>NEWs</th>
+            <th>DEPORTES</th>
+            <th>EL TIEMPO</th>
+        </tr>
+        <tr>
+            <td>Nacional</td>
+            <td>Futbol</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Internacional</td>
+            <td>Baloncesto</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>Sucesos</td>
+            <td>Tenis</td>
+            <td>Madrid</td>
+        </tr>
+        <colgroup>
+            <col style="background-color: lemonchiffon;">
+            <col span="2" style="background-color: lightsalmon;">
+        </colgroup>
+    </table>
+
+    <!--El atributo span="2" viene a definir la aplicacion de las dos siguientes columnas, del total de columnas
+    
+        Ejercicio:
+        Realizar tabla de 2 columnas y 3 fila, fondo negro en la cabecera, letras en azul, tabla centrada y datos,
+        asi como añadir un enlace. Temática: Principales buscadores de Internet.
+    -->
+
+    <h3 style="text-align: center;">Ejercicio</h3>
+    <table border="4" style="text-align: center;" align="center">
+
+        <Caption>Principales Buscadores de Internet</Caption>
+
+        <tr style="color: lightblue;" bgcolor="black" >
+            <th>Buscador</th>
+            <th>Url</th>
+        </tr>
+        <tr>
+            <td>Google</td>
+            <td><a href="https://www.google.es">https://www.google.es</a></td>
+        </tr>
+        <tr>
+            <td>Bing</td>
+            <td><a href="https://www.bing.com">https://www.bing.com</a></td>
+        </tr>
+        <tr>
+            <td>Yahoo</td>
+            <td><a href="https://www.yahoo.com">https://www.yahoo.com</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>

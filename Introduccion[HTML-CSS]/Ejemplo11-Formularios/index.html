@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!--
+            -------------------FORMULARIOS---------------------
+
+    Será ese conjunto de elementos que permiten introducir datos de los usuarios.
+    
+    Sintaxis:
+        <form></form>
+    
+    Estructura:
+        1.Agrupación de contenidos
+            Dos etiquetas contenedoras:
+            a.<fieldset></fieldset> Delimita el conjunto en directivas a resaltar
+            b.<legend></legend> Titulo del formulario
+        
+        2.Introduccion de Datos
+            a.Texto
+                *type="" (Naturaleza del texto, es decir: password, numero, texto, file)
+                *name="" (Nombre de la variable, que guarda dicho dato)
+                *size="" (Define tamaño o valor de nº de caracteres)
+                *maxlenght="" (Limita el nº de caracteres)
+                *value="" (Será el valor por defecto establecido)
+                *align="" (Alineación)
+                *disable="" (Elemento aparece desactivado)
+                *readonly="" (Impide modificar el contenido del elemento)
+            b.Menus
+                Se diferencia a la eleccion del usuario, en vez de introducir datos.
+                Partiremos de la etiqueta <select>, como si fuera una persiana de despliegue.
+                Tambien tenemos la opción de <datalist> ofreciendo la posibilidad de crear una lista directa de valores.
+                **Atributos <select>
+                    1.name: para dar nombre al menu
+                    2.size: nº de opciones
+                    3.multiple: poder escoger mas de una opción
+                ++Atributos <datalist>
+                    1.selec: Opcion por defecto
+                    2.value: Define el valor que tomará la variable
+        
+        3.Envio de datos
+            Necesitaremos como condición necesaria, pero no suficiente, el botón.
+            Sintaxis: 
+                <input type="submit"/>
+                Aparecerá el botón enviar, al pulsar permite enviar los datos a donde?
+                Definido en la etiqueta <form>, a través de los atributos action="".
+                El valor de atributo submit, será el valor que le demos al action del boton
+                y para el borrado de datos:
+                    <input type="reset"/>
+    -->
+    <div style="margin: 0 auto; text-align: center; width: 350px;">
+        <h2>FORMULARIO HTML</h2>
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <label>Nombre</label>
+            <input type="text" name="nombre" minlength="3" maxlength="20"/><br>
+            <label>Apellidos</label>
+            <input type="text" name="apellidos" list="apellidosList"/><br>
+            <datalist id="apellidosList">
+                <option value="Lopez">Lopez</option>
+                <option value="Sanz">Sanz</option>
+                <option value="Sanchez">Sanchez</option>
+                <option value="Gutierrez">Gutierrez</option>
+            </datalist>
+            <label>Edad</label>
+            <input type="number" name="edad" min="18"/><br>
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="fechaN"/><br>
+        </fieldset>
+        <Fieldset>
+            <legend>RESERVA</legend>
+            <label>Escoge tu Aventura</label>
+            <select name="experiencia">
+                <option>--------------</option>
+                <option>Experiencia Descenso Rapidos (150€/persona)</option>
+                <option>Experiencia Velero (135€/dia)</option>
+                <option>Experiencia Surf (90€ persona/2horas)</option>
+                <option>Experiencia Glamping (35€/noche/persona)</option>
+            </select><br>
+            <label>Fecha de Reserva</label><br>
+            <input type="date" name="reserva"/>
+            <label>Fecha y hora de entrada</label><br>
+            <input type="datetime-local" name="entrada"/>
+            <label>Fecha y hora de salida</label><br>
+            <input type="datetime-local" name="salida"/>
+            <label>Selecciona color pulsera</label>
+            <input type="color" name="opcion"/>
+        </Fieldset>
+        <Fieldset>
+            <legend>CONTACTO</legend>
+            <label>E-mail</label>
+            <input type="email" name="email"/>
+        </Fieldset><br>
+        <div>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Borrar"/>
+        </div>
+    </div>
+</body>
+
+</html>
