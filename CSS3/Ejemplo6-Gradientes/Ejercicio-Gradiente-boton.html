@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion de Gradientes</title>
+</head>
+
+<body>
+    <style>
+        /*
+La pseudo-clase :active;
+Representacion, parecida a un boton (elemento), donde el usuario genera
+la activacion. Inicia al usuario al presionar el boton primario del raton, y
+seguidamente activa la accion pero no termina; hasta que no suelta el boton.
+Sintaxis:
+        etiqueta,elemento:active{
+            atributos
+        }
+*/
+        p:active {
+            text-align: right;
+            font-size: x-large;
+            font-weight: bold;
+            background: linear-gradient(yellow, green, red);
+            color: white
+        }
+
+        img:active {
+            background: linear-gradient(to right, 
+            rgba(0, 0, 255, 0.671) 20%, 
+            rgba(255, 0, 0, 0.89),
+            rgba(255, 255, 0, 0.541), 
+            rgba(0, 0, 255, 0.699), 
+            rgba(0, 128, 0, 0.733), 
+            rgba(255, 0, 0, 0.781));
+            border-radius: 25px;
+            width: 18%;
+            box-shadow: 2px 2px 5px grey;
+        }
+    </style>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, accusantium?
+        Itaque alias fuga placeat voluptatem quas fugiat a soluta consectetur!
+        Exercitationem neque placeat porro omnis, ad nisi recusandae necessitatibus consequuntur!
+        Quam itaque consequuntur quae quis unde, impedit accusantium repudiandae nihil.
+        Excepturi deserunt, blanditiis ducimus vitae incidunt error esse sequi omnis.
+        Dolore quam doloribus beatae deserunt vero corrupti facere alias fugit?
+        Officiis, pariatur praesentium? Error, possimus libero. Magnam officiis optio ea.
+        Ea doloribus placeat corrupti debitis praesentium aperiam voluptatibus optio eligendi.
+        Animi dolore magnam nihil eaque, consequuntur sunt repellendus nisi vel.
+        Tempora vero soluta fugit molestias ipsa corporis non commodi qui?
+    </p>
+    <!--
+        Ejercicio: Usando una imagen, al presionarla genere un cambio visual en el usuario y me lleve
+        a un enlace (otra pagina)
+    -->
+    <div align="center">
+        <a href="https://www.google.es"><img src="images/googlelogo_color_272x92dp.png" /></a>
+    </div>
+
+</body>
+
+</html>
